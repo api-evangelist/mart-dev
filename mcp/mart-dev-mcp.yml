@@ -1,0 +1,19 @@
+generated: '2026-09-28'
+method: derived
+generator: derive-mcp-candidate.py
+source:
+- openapi/_ae-authored/mart-dev-openapi-generated.yml
+status: candidate
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed
+note: 'No MCP server was found. The pre-flight posted tools/list to /mcp on mart.dev, api.mart.dev; verdict opaque (https://mart.dev/api/mcp answered
+  403: the edge authenticates before it routes, which proves nothing either way). Candidate tools below are derived from the 1 operation(s) in
+  the provider''s own OpenAPI (1 listed); they describe what a server WOULD expose, not one that exists.'
+tools:
+- name: get_v1_linkedin
+  operationId: get_v1_linkedin
+  method: GET
+  path: /v1/linkedin
+  description: GET /v1/linkedin

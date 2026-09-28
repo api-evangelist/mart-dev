@@ -1,0 +1,31 @@
+generated: '2026-09-28'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://mart.dev/#pricing
+sources:
+- https://mart.dev/#pricing
+name: Mart.dev pricing
+audience: developer-api
+pricing_basis: per-call
+plans:
+- name: Free
+  price_text: Free
+  description: 1k credits
+  limits:
+  - name: credits
+    limit_text: 1,000 free records
+- name: Launch
+  price_text: $ 50 one-time
+  price: 50
+  description: 50,000 credits
+  features:
+  - Up to 50,000 successful results
+  - Up to 50 requests per second
+  - All seven LinkedIn endpoints
+  - Real-time public data
+  - Empty and failed results cost nothing
+  limits:
+  - name: credits
+    limit_text: 50,000 credits
+docs: https://mart.dev/#pricing
+note: 3 extracted row(s) were dropped because their quote was not on the page.

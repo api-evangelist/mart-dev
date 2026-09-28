@@ -1,0 +1,17 @@
+generated: '2026-09-28'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://mart.dev/docs/#authentication
+sources:
+- https://mart.dev/docs/#authentication
+- https://mart.dev/docs/
+- https://mart.dev/docs/#quickstart
+description: Pass your API key in the header
+schemes:
+- type: apiKey
+  name: x-api-key
+  evidence: Every request uses the x-api-key header. You can get a key in API Keys.
+  location: header
+  header: x-api-key
+  how_to_obtain: Get a key in API Keys (default key or create additional keys).
+docs: https://mart.dev/docs/#authentication

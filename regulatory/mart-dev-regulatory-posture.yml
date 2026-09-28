@@ -1,0 +1,36 @@
+generated: '2026-09-28'
+method: probed
+source: https://mart.dev/privacy/
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://mart.dev/privacy/
+        http_status: 200
+        fetched: /tmp/mart_privacy.html
+        quote: "You can also contact support@mart.dev to request access, correction, deletion, restriction, or a portable copy of personal information, or to object to processing."
+        section: "Your choices and privacy requests"
+    note: Provides mechanisms for data subject rights requests.
+  data_retention:
+    evidence:
+      - source: https://mart.dev/privacy/
+        http_status: 200
+        fetched: /tmp/mart_privacy.html
+        quote: "Account, request, billing, and support records are kept while needed to provide the service, investigate problems, resolve disputes, and meet applicable recordkeeping requirements. Deleting an account may not immediately remove records that we need to retain for those purposes or copies in rotating backups."
+        section: "How long we keep information"
+    note: Describes retention period and conditions.
+  subprocessors:
+    evidence:
+      - source: https://mart.dev/privacy/
+        http_status: 200
+        fetched: /tmp/mart_privacy.html
+        quote: "Our providers include Fly.io for hosting, Resend for transactional email, Google Workspace for email and support, Stripe for payments, and Slack for internal operational alerts."
+        section: "Service providers and disclosures"
+    note: Lists third‑party service providers (sub‑processors).
+  data_residency:
+    evidence:
+      - source: https://mart.dev/privacy/
+        http_status: 200
+        fetched: /tmp/mart_privacy.html
+        quote: "Information may be processed in the United States and other countries where our providers operate."
+        section: "Storage and security"
+    note: Indicates cross‑border data processing.

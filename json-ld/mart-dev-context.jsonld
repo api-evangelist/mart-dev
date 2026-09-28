@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "@vocab": "https://mart.dev/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "mart": "https://mart.dev/schema#",
+    "GetV1LinkedinResponse": "mart:GetV1LinkedinResponse",
+    "type": {
+      "@id": "mart:type",
+      "@type": "xsd:string"
+    },
+    "url": {
+      "@id": "mart:url",
+      "@type": "xsd:string"
+    },
+    "accessible": {
+      "@id": "mart:accessible",
+      "@type": "xsd:boolean"
+    },
+    "profileState": {
+      "@id": "mart:profileState",
+      "@type": "xsd:string"
+    },
+    "profile": {
+      "@id": "mart:profile"
+    },
+    "tookMs": {
+      "@id": "mart:tookMs",
+      "@type": "xsd:integer"
+    },
+    "creditsUsed": {
+      "@id": "mart:creditsUsed",
+      "@type": "xsd:integer"
+    },
+    "creditsRemaining": {
+      "@id": "mart:creditsRemaining",
+      "@type": "xsd:integer"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Mart.dev API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Mart.dev's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-09-28) from openapi/_ae-authored/mart-dev-openapi-generated.yml.",
+  "dcterms:created": "2026-09-28",
+  "dcterms:source": [
+    "openapi/_ae-authored/mart-dev-openapi-generated.yml"
+  ]
+}
