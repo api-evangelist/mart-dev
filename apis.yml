@@ -70,23 +70,22 @@ common:
 
 apis:
 - name: Mart API
-  description: Provides endpoints for public LinkedIn data such as profiles, companies, posts, and jobs.
+  description: >-
+    Provides endpoints for public LinkedIn data such as profiles, companies, posts, and jobs.
   humanURL: https://mart.dev/docs/
   baseURL: null
   aid: mart-dev:mart-api
-- aid: mart-dev:mart-dev-api
-  name: Mart.dev API
-  description: 'Mart.dev API as documented publicly: 1 operations. Contract generated from the documentation by API Evangelist (2026-09-28); not
-
-    the provider''s own document.'
-  humanURL: https://mart.dev/docs
+- aid: mart-dev:mart-dev-linked-in-api
+  name: Mart.dev Linked In API
+  description: The Linked In API from Mart.dev — 1 operation(s) for linked in.
+  humanURL: https://mart.dev/docs/
+  tags:
+  - Linked In
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/mart-dev-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/mart-dev-linked-in-api-openapi.yml
   - type: JSONSchema
     url: json-schema/mart-dev-get-v1-linkedin-response-schema.json
-
 x-submission-notes: Markets itself as 'the world's fastest and cheapest LinkedIn API' -- an UNOFFICIAL third-party LinkedIn data API (not LinkedIn's).
   Profile it as Mart.dev's own API; never attribute it to LinkedIn.
 

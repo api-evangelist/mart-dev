@@ -1,0 +1,84 @@
+openapi: 3.2.0
+info:
+  title: Mart.dev LinkedIn API
+  version: '2026-09-28'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-28: 1 operation(s) read from 3 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Mart.dev has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 1
+    documentation: 0
+    pages-with-code: 2
+    pages-read: 3
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-28'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://mart.dev/docs
+  - https://api.mart.dev
+  - https://api.mart.dev/docs
+security:
+- apiKey: []
+tags:
+- name: Linked In
+paths:
+  /v1/linkedin:
+    get:
+      operationId: get_v1_linkedin
+      tags:
+      - Linked In
+      summary: GET /v1/linkedin
+      x-source: https://mart.dev/docs
+      responses:
+        '200':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetV1LinkedinResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl --get 'https://api.mart.dev/v1/linkedin'  --header \"x-api-key: $MART_API_KEY\"  --data-urlencode 'type=profile'  --data-urlencode 'url=https://www.linkedin.com/in/dharmesh'\nKeep your API key on your server\n200 · application/json\nCopy\n{\n \"type\": \"linkedin-profile\",\n \"url\": \"https://www.linkedin.com/in/dharmesh\",\n \"accessible\": true,\n \"profileState\": \"accessible\",\n \"profile\": {\n \"name\": \"Dharmes"
+components:
+  schemas:
+    GetV1LinkedinResponse:
+      type: object
+      properties:
+        type:
+          type: string
+        url:
+          type: string
+        accessible:
+          type: boolean
+        profileState:
+          type: string
+        profile:
+          type: object
+          properties:
+            name:
+              type: string
+            headline:
+              type: string
+            currentTitle:
+              type: string
+            titleSource:
+              type: string
+            currentCompany:
+              type: string
+            city:
+              type: string
+            country:
+              type: string
+        tookMs:
+          type: integer
+        creditsUsed:
+          type: integer
+        creditsRemaining:
+          type: integer
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: x-api-key
