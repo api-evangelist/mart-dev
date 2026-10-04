@@ -6,13 +6,18 @@
   "outputs": [
     "mart-dev-linkedin-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
   "notes": [
     "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
     "mart-dev-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "superseded outputs removed: mart-dev-linked-in-api-openapi.yml",
     "apis.yml register: written (+1 apis, 2 total)"
   ],
-  "skipped": []
+  "skipped": [
+    "mart-dev-linked-in-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
