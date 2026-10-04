@@ -25,6 +25,11 @@ modified: '2026-09-28'
 
 tags:
 - Company
+- Data
+- LinkedIn
+- Unofficial
+tags_raw:
+- Company
 - API
 - Data
 - LinkedIn
@@ -80,6 +85,8 @@ apis:
   description: The Linked In API from Mart.dev — 1 operation(s) for linked in.
   humanURL: https://mart.dev/docs/
   tags:
+  - LinkedIn
+  tags_raw:
   - Linked In
   properties:
   - type: OpenAPI
