@@ -42,6 +42,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: Pricing
+  url: https://mart.dev/#pricing
 - type: Plans
   url: plans/mart-dev-plans-pricing.yml
 - type: Spectral
